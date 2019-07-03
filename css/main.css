@@ -1,0 +1,13 @@
+.navbar-dark, .navbar-nav, .nav-link, .nav-item{
+    color: whitesmoke!important;
+}
+
+.navbar, .navbar-nav .active>.nav-link{
+    color: #97be50!important;
+}
+
+a:hover{
+    text-decoration: #97be50!important;
+    color: #97be50!important;
+}
+
