@@ -1,0 +1,10 @@
+@font-face {
+    font-family: Apex-Mk2-Bold-Extended;
+    src:  url(fonts/ApexMk2-Bold-Extended.ttf) format('truetype'),
+        
+}
+
+.body{
+    font-family: 'Apex-Mk2-Bold-Extended';
+    
+}

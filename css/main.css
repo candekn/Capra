@@ -3,11 +3,29 @@
 }
 
 .navbar, .navbar-nav .active>.nav-link{
-    color: #97be50!important;
+    color: #1B2526 !important;
 }
 
 a:hover{
     text-decoration: #97be50!important;
     color: #97be50!important;
 }
+
+/* Fuentes de letra */ 
+
+
+/* Menu de navegacion */
+.bg-dark {
+  background-color: #1B2526 !important;
+}
+
+.nav-link.active {
+  color: #97be50 !important;
+}
+
+.html{
+    font-family: Apex-Mk2-Bold-Extended !important;
+    
+}
+
 

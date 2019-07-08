@@ -5,55 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
-    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
-    <link type="text/css" rel="stylesheet" href="css/main.css">
-    <title>Inicio - Capra</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fuentes.css">
+   
+    <title>Capra</title>
 </head>
 <body>
-<nav	class="navbar navbar-expand-lg navbar-dark" style="background:
-url('img/technology.jpg')">
-    <div class="container" >
-        <a	class="navbar-brand" href="Index.html"><img class="img-fluid" src="img/Logo.png"
-                                     alt="Logo CAPRA, Bariloche Rent-a-Car"></a>
-        <button	class="navbar-toggler"	type="button"	data-toggle="collapse"
-                   data-target="#navbarSupportedContent"	aria-controls="navbarSupportedContent"
-                   aria-expanded="false"	aria-label="Toggle	navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-            <div class="collapse navbar-collapse"	id="navbarSupportedContent">
-                <ul	class="navbar-nav	ml-auto">
-                    <li	class="nav-item active">
-                        <a	class="nav-link"	href="#">Inicio</a>
-                    </li>
-                    <li	class="nav-item">
-                        <a	class="nav-link"	href="#">Nosotros</a>
-                    </li>
-                    <li	class="nav-item">
-                        <a	class="nav-link"	href="Vehiculos.html">Vehículos</a>
-                    </li>
-                    <li	class="nav-item">
-                        <a	class="nav-link"	href="#">Puntos de carga</a>
-                    </li>
-                    <li	class="nav-item">
-                        <a	class="nav-link"	href="Contacto.html">Contacto</a>
-                    </li>
-                    <li	class="nav-item">
-                    <a	class="nav-link"	href="#">FAQS</a>
-                    </li>
-                    <li	class="nav-item	dropdown">
-                        <div	class="dropdown-menu"	aria-labelledby="navbarDropdown">
-                            <a	class="dropdown-item"	href="#">Action</a>
-                            <a	class="dropdown-item"	href="#">Another	action</a>
-                            <div	class="dropdown-divider"></div>
-                            <a	class="dropdown-item"	href="#">Something	else	here</a>
-                        </div>
-                    </li>
-                </ul>
-            </div> <!--/collapse-->
-    </div> <!--/Container-->
+   <!-- Menu de navegacion --> 
+     <nav class="navbar navbar-dark bg-dark navbar-expand-lg sticky-top">
+       <div class="container">
+       <a class="navbar-brand" href="index.html">
+           <img src="img/Logo.png" width="250" height="150" class="d-inline-block align-top img-fluid" alt="">
+       </a>
+       
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+           
+       <div class="navbar-nav text-center ml-auto mr-auto">
+         <a class="nav-item nav-link active" href="#">INICIO</a>
+         <a class="nav-item nav-link" href="#">NOSOTROS</a>
+         <a class="nav-item nav-link" href="#">VEHICULO</a>
+         <a class="nav-item nav-link" href="#">PUNTOS DE CARGA</a>
+         <a class="nav-item nav-link" href="#">CONTACTO</a>
+       </div>
+    </div>
+    </div>   
+    </nav>
 
-</nav>
-<div class="container-fluid" style="background: url('img/bariloche4.jpg'); background-size: cover">
+    <!-- Fin menu de navegacion -->
+
+   <!-- Busqueda -->
+    <div class="container" style="background-color: black">
+       
+       <div class="row">
+        <div class="col-2 d-flex"> 
+          <input type="text" class="form-control ml-1" placeholder="Entrega...">
+        </div> 
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Fecha">
+       </div> 
+        <div class="col">
+          <input type="text" class="form-control " placeholder="Hora">
+        </div> 
+    
+        <div class="col">
+          <input type="text" class="form-control " placeholder="Devolucion...">
+        </div> 
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Fecha">
+        </div> 
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Hora">
+        </div> 
+        <div class="col">
+          <button class="btn btn-warning">Buscar</button>
+        </div> 
+       
+      </div> 
+    </div>
+   
+   <!-- Fin busqueda -->
+   <div class="container-fluid" style="background: url('img/bariloche4.jpg'); background-size: cover">
     <div class="container" style="background: rgba(3,30,0,0.51)">
         <div class="row">
             <div class="col-md-7">
@@ -90,9 +104,9 @@ url('img/technology.jpg')">
         </div> <!--row-->
     </div> <!--/container-->
 </div> <!--/container fluid-->
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/jquery.zoom.min.js"></script>
+
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
