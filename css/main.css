@@ -11,11 +11,13 @@ a:hover{
     color: #97be50!important;
 }
 
-body {
-    background-color: white;
+.container {
+    background: url('img/bariloche4.jpg') !important;
 }
-/* Busqueda */
-
+/* Cards */
+.card .bg-dark {
+  
+}
 
 
 
