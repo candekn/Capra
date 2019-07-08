@@ -11,7 +11,13 @@ a:hover{
     color: #97be50!important;
 }
 
-/* Fuentes de letra */ 
+body {
+    background-color: white;
+}
+/* Busqueda */
+
+
+
 
 
 /* Menu de navegacion */
@@ -26,6 +32,17 @@ a:hover{
 .html{
     font-family: Apex-Mk2-Bold-Extended !important;
     
+}
+
+/* Footer */ 
+
+.footer-letra {
+    color: white;
+    background-color: #1B2526;
+}
+
+.fab {
+    color: white;
 }
 
 
