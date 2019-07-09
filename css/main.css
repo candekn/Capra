@@ -38,6 +38,14 @@ body{
     
 }
 
+/* Vehiculos */ 
+.contenedor-vehiculos {
+    background: url('img/bariloche4.jpg'); 
+    background-size: cover; 
+    margin-top: -10px;
+    margin-bottom: -12px;
+}
+
 /* Footer */ 
 
 .footer-letra {
@@ -47,6 +55,10 @@ body{
 
 .fab {
     color: white;
+}
+
+footer {
+    margin-top: 12px;
 }
 
 

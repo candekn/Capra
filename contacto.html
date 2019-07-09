@@ -31,15 +31,17 @@
        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+    
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-           
-       <div class="navbar-nav text-center ml-auto mr-auto">
-         <a class="nav-item nav-link" href="Index.html">INICIO</a>
+         
+       <div class="navbar-nav text-center ml-auto">
+         <a class="nav-item nav-link active" href="Index.html">INICIO</a>
          <a class="nav-item nav-link" href="#">NOSOTROS</a>
          <a class="nav-item nav-link" href="vehiculos.html">VEHICULOS</a>
          <a class="nav-item nav-link" href="#">PUNTOS DE CARGA</a>
-         <a class="nav-item nav-link active" href="contacto.html">CONTACTO</a>
+         <a class="nav-item nav-link" href="contacto.html">CONTACTO</a>
        </div>
+       
     </div>
     </div>   
     </nav>
@@ -47,22 +49,25 @@
     <!-- Fin menu de navegacion -->
 
     <!-- Formulario -->
-    <div class="container">
+    <div class="container-fluid contenedor-vehiculos" style="background: url('img/bariloche4.jpg'); background-size: cover; margin-top: -10px; margin-bottom: -17px">
+    <div class="container my-1" style="background: rgba(3,30,0,0.61)">
 
-    <h3 class="my-3">Contacto</h3><br />
+    <h3 class="my-2 text-white">Contacto</h3><br />
 
     <div class="row">
       <div class="col-md-8">
           <form action="/post" method="post">
-            <input class="form-control" name="name" placeholder="Nombre..." /><br />
-            <input class="form-control" name="phone" placeholder="Telefono..." /><br />
-            <input class="form-control" name="email" placeholder="E-mail..."/><br />
-            <textarea class="form-control" name="text" placeholder="¿Cómo podemos ayudarte?" style="height:150px;"></textarea><br />
+    
+            <input class="form-control" placeholder="Nombre..." required /><br />
+            <input class="form-control" placeholder="Telefono..." required /><br />
+            <input class="form-control" type="email" placeholder="E-mail..." required /><br />
+            <textarea class="form-control" name="text" placeholder="¿Cómo podemos ayudarte?" style="height:150px;" required></textarea><br />
             <div class="d-flex justify-content-center">
-            <input class="btn btn-warning px-4" type="submit" value="Enviar"/><input class="btn btn-secondary mx-2" type="reset" value="Restablecer"/></div><br /><br />
+            <button class="btn btn-warning px-4">Enviar</button>
+            <input class="btn btn-secondary mx-2" type="reset" value="Restablecer"/></div><br /><br />
           </form>
       </div>
-      <div class="col-md-4">
+          <div class="col-md-4 text-white">
         <b>Atención al cliente:</b> <br />
         Tel.: 0294-498-6054<br />
         E-mail: <a href="mailto:support@capra.com">support@capra.com</a><br />
@@ -78,51 +83,53 @@
     </div>
 
     </div>
+    </div>
     
     <!-- Fin formulario -->
     
-    <!-- Footer -->
-    <footer class="page-footer font-small cyan darken-3" style="background-color: #1B2526">
+<!-- Footer -->
+<footer class="page-footer font-small cyan darken-3" style="background-color: #1B2526">
 
-      <!-- Footer Elements -->
-      <div class="container">
+  <!-- Footer Elements -->
+  <div class="container">
 
-        <!-- Grid row-->
-        <div class="row">
+    <!-- Grid row-->
+    <div class="row">
 
-          <!-- Grid column -->
-          <div class="col-12 py-5 d-flex justify-content-center">
-            <div class="">
+      <!-- Grid column -->
+      <div class="col-12 py-5 d-flex justify-content-center">
+        <div class="">
 
-              <!-- Facebook -->
-              <a class="fb-ic">
-                <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                </a>
-              <!-- Twitter -->
-              <a class="tw-ic">
-                <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-              </a>
-              <!--Instagram-->
-              <a class="ins-ic">
-                <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-              </a>
-
-            </div>
-          </div>
-          <!-- Grid column -->
-
+          <!-- Facebook -->
+          <a href="#" class="fb-ic">
+            <i class="fab fa-facebook-f fa-lg white-text mx-3 fa-2x"> </i>
+            </a>
+          <!-- Twitter -->
+          <a href="#" class="tw-ic">
+            <i class="fab fa-twitter fa-lg white-text mx-3 fa-2x"> </i>
+          </a>
+          <!--Instagram-->
+          <a href="#" class="ins-ic">
+            <i class="fab fa-instagram fa-lg white-text mx-3 fa-2x"> </i>
+          </a>
+          
         </div>
-        <!-- Grid row-->
-
       </div>
-      <!-- Footer Elements -->
+      <!-- Grid column -->
 
-      <!-- Copyright -->
-      <div class="footer-letra d-flex justify-content-center py-3" style="margin-left: -2px">© 2019 Copyright: <a href="#"> Capra</a>
-      </div>
-      <!-- Copyright -->
+    </div>
+    <!-- Grid row-->
 
-    </footer>
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-letra d-flex justify-content-center pb-2">
+  © 2019 Copyright: <a href="#">Capra</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
 <!-- Footer -->
 </body> 
 </html>
