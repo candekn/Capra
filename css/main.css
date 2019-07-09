@@ -15,10 +15,14 @@ a:hover{
     background: url('img/bariloche4.jpg') !important;
 }
 /* Cards */
-.card .bg-dark {
-  
+.card {
+  font-size: 19px;
 }
 
+body{
+    font-family: 'Abel', sans-serif;
+    background: url(img/bariloche4.jpg);
+}
 
 
 
@@ -31,8 +35,8 @@ a:hover{
   color: #97be50 !important;
 }
 
-.html{
-    font-family: Apex-Mk2-Bold-Extended !important;
+.navbar{
+    font-family: 'Russo One', sans-serif !important;
     
 }
 
