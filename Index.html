@@ -44,7 +44,7 @@
     </nav>
 
     <!-- Fin menu de navegacion -->
-   <div class="container">
+   <!--<div class="container">
        <div class="d-inline justify-content-center">
            <form class="form-control my-0 py-1 lime-border border-info">
                <input type="text" placeholder="Entrega">
@@ -59,10 +59,114 @@
 
 
 
-   </div>
+   </div>-->
+    
+        <!-- Formulario busqueda -->
+      <div class="container">
+         <section id="teaser">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-4 hidden-md-down col-lg-6 pull-right">
+                <!-- SLOGAN -->
+                    <div id="texto-home">
+                    <span class="texto-sup">Manej&aacute; tus tiempos...</span><br />
+                    Aprovech&aacute; mejor las horas del d&iacute;a y lleg&aacute; hasta donde vos quieras!
+                    </div>
+                <!-- SLOGAN -->
+                
+            </div>
 
+            <div class="col-md-8 col-lg-6 col-xs-12 pull-left">
+            <div class="reservation-form-shadow">
+            <form action="#" id="car-select-form" method="post" name="car-select-form">
+            
+            <!-- Car select start -->
+
+                <div class="styled-select-car">
+                 <select id="car-select" name="car-select">
+                      <option>Seleccione su Vehículo</option>
+                      <option>Renault Clio 3 puertas</option>
+                      <option>Renault Clio 5 puertas</option>
+                      <option>Renault Fluence</option>
+                      <option>Chevrotlet Prisma</option> 
+                  </select>
+                  <i class="fas fa-sort-down arrow"></i>
+                </div>
+            <!-- Car select end -->
+            
+                <!-- Pick-up location start -->
+                <div class="location">
+                    <div class="input-group pick-up">
+                        <span class="input-group-addon">Entrega</span> 
+                        <input class="form-control autocomplete-location" id="pick-up-location" name="pick-up-location" placeholder="Hotel, Terminal o Aeropuerto" type="text" />
+                    </div>
+                <!-- Pick-up location end -->
+                
+        
+                
+                <!-- Drop-off location start -->
+
+                    <div class="input-group drop-off">
+                        <span class="input-group-addon">Devoluci&oacute;n</span> 
+                        <input class="form-control autocomplete-location" id="drop-off-location" name="drop-off-location" placeholder="Hotel, Terminal o Aeropuerto" type="text" />
+                    </div>
+                </div>
+            <!-- Drop-off location end --><!-- Pick-up date/time start -->
+
+            <div class="datetime pick-up">
+                <div class="date pull-left">
+                <div class="input-group"><span class="input-group-addon pixelfix">Entrega</span> <input class="form-control datepicker" id="pick-up-date" name="pick-up-date" placeholder="dd/mm/aaaa" type="text" /></div>
+                </div>
+
+                <div class="time pull-right">
+                    <div class="styled-select-time">
+                        <select id="pick-up-time" name="pick-up-time">
+                            <option value="12:00 AM">12:00 AM</option><option value="12:30 AM">12:30 AM</option><option value="01:00 AM">01:00 AM</option><option value="01:30 AM">01:30 AM</option><option value="02:00 AM">02:00 AM</option><option value="02:30 AM">02:30 AM</option><option value="03:00 AM">03:00 AM</option><option value="03:30 AM">03:30 AM</option><option value="04:00 AM">04:00 AM</option><option value="04:30 AM">04:30 AM</option><option value="05:00 AM">05:00 AM</option><option value="05:30 AM">05:30 AM</option><option value="06:00 AM">06:00 AM</option><option value="06:30 AM">06:30 AM</option><option value="07:00 AM">07:00 AM</option><option value="07:30 AM">07:30 AM</option><option value="08:00 AM">08:00 AM</option><option value="08:30 AM">08:30 AM</option><option value="09:00 AM">09:00 AM</option><option value="09:30 AM">09:30 AM</option><option value="10:00 AM">10:00 AM</option><option value="10:30 AM">10:30 AM</option><option value="11:00 AM">11:00 AM</option><option value="11:30 AM">11:30 AM</option><option value="12:00 PM">12:00 PM</option><option value="12:30 PM">12:30 PM</option><option value="01:00 PM">01:00 PM</option><option value="01:30 PM">01:30 PM</option><option value="02:00 PM">02:00 PM</option><option value="02:30 PM">02:30 PM</option><option value="03:00 PM">03:00 PM</option><option value="03:30 PM">03:30 PM</option><option value="04:00 PM">04:00 PM</option><option value="04:30 PM">04:30 PM</option><option value="05:00 PM">05:00 PM</option><option value="05:30 PM">05:30 PM</option><option value="06:00 PM">06:00 PM</option><option value="06:30 PM">06:30 PM</option><option value="07:00 PM">07:00 PM</option><option value="07:30 PM">07:30 PM</option><option value="08:00 PM">08:00 PM</option><option value="08:30 PM">08:30 PM</option><option value="09:00 PM">09:00 PM</option><option value="09:30 PM">09:30 PM</option><option value="10:00 PM">10:00 PM</option><option value="10:30 PM">10:30 PM</option><option value="11:00 PM">11:00 PM</option><option value="11:30 PM">11:30 PM</option> 
+                        </select>
+                         <i class="fas fa-sort-down arrow"></i>
+                    </div>
+                    
+                </div>
+
+                <div class="clearfix">
+                </div>
+            </div>
+            <!-- Pick-up date/time end --><!-- Drop-off date/time start -->
+
+            <div class="datetime drop-off">
+                <div class="date pull-left">
+                    <div class="input-group"><span class="input-group-addon pixelfix">Devoluci&oacute;n</span> <input class="form-control datepicker" id="drop-off-date" name="drop-off-date" placeholder="dd/mm/aaaa" type="text" />
+                    </div>
+                </div>
+
+                    <div class="time pull-right">
+                        <div class="styled-select-time"><select id="drop-off-time" name="drop-off-time"><option value="12:00 AM">12:00 AM</option><option value="12:30 AM">12:30 AM</option><option value="01:00 AM">01:00 AM</option><option value="01:30 AM">01:30 AM</option><option value="02:00 AM">02:00 AM</option><option value="02:30 AM">02:30 AM</option><option value="03:00 AM">03:00 AM</option><option value="03:30 AM">03:30 AM</option><option value="04:00 AM">04:00 AM</option><option value="04:30 AM">04:30 AM</option><option value="05:00 AM">05:00 AM</option><option value="05:30 AM">05:30 AM</option><option value="06:00 AM">06:00 AM</option><option value="06:30 AM">06:30 AM</option><option value="07:00 AM">07:00 AM</option><option value="07:30 AM">07:30 AM</option><option value="08:00 AM">08:00 AM</option><option value="08:30 AM">08:30 AM</option><option value="09:00 AM">09:00 AM</option><option value="09:30 AM">09:30 AM</option><option value="10:00 AM">10:00 AM</option><option value="10:30 AM">10:30 AM</option><option value="11:00 AM">11:00 AM</option><option value="11:30 AM">11:30 AM</option><option value="12:00 PM">12:00 PM</option><option value="12:30 PM">12:30 PM</option><option value="01:00 PM">01:00 PM</option><option value="01:30 PM">01:30 PM</option><option value="02:00 PM">02:00 PM</option><option value="02:30 PM">02:30 PM</option><option value="03:00 PM">03:00 PM</option><option value="03:30 PM">03:30 PM</option><option value="04:00 PM">04:00 PM</option><option value="04:30 PM">04:30 PM</option><option value="05:00 PM">05:00 PM</option><option value="05:30 PM">05:30 PM</option><option value="06:00 PM">06:00 PM</option><option value="06:30 PM">06:30 PM</option><option value="07:00 PM">07:00 PM</option><option value="07:30 PM">07:30 PM</option><option value="08:00 PM">08:00 PM</option><option value="08:30 PM">08:30 PM</option><option value="09:00 PM">09:00 PM</option><option value="09:30 PM">09:30 PM</option><option value="10:00 PM">10:00 PM</option><option value="10:30 PM">10:30 PM</option><option value="11:00 PM">11:00 PM</option><option value="11:30 PM">11:30 PM</option> </select>
+                        <i class="fas fa-sort-down arrow"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="clearfix">
+                    </div>
+            </div>
+            <!-- Drop-off date/time end -->
+            <input class="submit my-4 my-md-1" id="checkoutModalLabel" name="submit" type="submit" value="Consulte Ahora!" />
+            </form>
+            </div>
+            </div>
+        </div>
+        </div>
+   </section>
+</div>  
+      
+      
+      
+      
+      
+      
+      
+      
        <!-- Slider -->
-   <div class="container">
+   <!--<div class="container">
        <div id="myCarousel" class="carousel slide" data-ride="carousel">
            <ol class="carousel-indicators">
                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -111,7 +215,7 @@
 
        </div>
 
-   </div>
+   </div>-->
  <!-- Fin Slider -->
    
    <!-- Cards -->

@@ -82,3 +82,171 @@ footer {
  .bg-trans{
     background-color: rgba(10, 10, 10, 0.6);
  }
+
+
+/* Teaser
+-------------------------------------*/
+#teaser {
+    height: 600px;
+    padding: 60px 0;
+    background-image: url(../img/slider-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#texto-home {
+    font-family: 'Abel', sans-serif;
+    text-align: left;
+    width: 80%;
+    height: auto;
+    color: #FFF;
+    font-size: 33px;
+    line-height: 33px;
+    text-shadow: 2px 0px 7px rgba(0, 0, 0, 0.69);
+    font-weight: normal;
+}
+
+.texto-sup {
+    font-weight: 300 !important;
+    line-height: normal;
+}
+
+#teaser .reservation-form-shadow {
+    height: 480px;
+    background-color: #fff;
+    box-shadow: 0 9px 0px 0px #ffffff, 0 -9px 0px 0px #ffffff, 7px 0 15px -4px rgba(0, 0, 0, 0.3), -7px 0 15px -4px rgba(0, 0, 0, 0.3);
+}
+
+#teaser form {
+    padding: 34px;
+    
+}
+
+
+#teaser form .styled-select-car {
+    border: 2px solid #efe9e9;
+    height: 55px;
+    position: relative;
+    margin-bottom: 23px;
+}
+
+#teaser form .styled-select-car select {
+    border: none;
+    font-size: 20px;
+    font-weight: 300;
+    width: 100%;
+    background-image: none;
+    background: #fff;
+    -webkit-appearance: none;
+    padding: 9px 10px;
+    height: 51px;
+    outline: none;
+}
+.styled-select-car .arrow{
+    right: 15px;
+    top: 16px;
+    position: absolute;
+    color: #d4d642;
+    width: auto;
+}
+
+.styled-select-time .arrow {
+    right: 10px;
+    top: 9px;
+    position: absolute;
+    color: #d4d642;
+}
+
+
+#teaser form .location {
+    margin-bottom: 27px;
+}
+
+#teaser form .input-group {
+    width: 100%;
+}
+
+#teaser form .input-group-addon {
+    border-radius: 0;
+    border: 1px solid #efe9e9;
+    background-color: rgba(212, 214, 66,0.2);
+    font-weight: 300;
+    font-size: 18px;
+    color: #716d6e;
+    width: 110px;
+    text-align: center;
+    padding: 7px;
+}
+
+#teaser form .input-group input {
+    border-radius: 0;
+    color: #d4d642;
+    font-size: 14px;
+    padding-left: 15px;
+    box-shadow: none;
+    background: none;
+    -webkit-appearance: none;
+}
+#teaser form .form-control {
+    height: 43px;
+    border: 2px solid #efe9e9;
+    box-shadow: none;
+}
+
+#teaser form .datetime {
+    margin-bottom: 11px;
+}
+
+#teaser form .date {
+    width: 240px;
+}
+
+#teaser form .time {
+    width: 136px;
+}
+
+#teaser form .styled-select-time {
+    border: 2px solid #efe9e9;
+    height: 43px;
+    width: 95%;
+    position: relative;
+}
+
+
+
+#teaser form .styled-select-time select {
+    border: none;
+    font-size: 16px;
+    width: 100%;
+    background-image: none;
+    background: #fff;
+    -webkit-appearance: none;
+    padding: 8px 8px;
+    height: 39px;
+    color: #e9bd15;
+}
+
+.pull-right {
+    float: right!important;
+}
+
+.pull-left {
+    
+    float: left!important;
+}
+
+#teaser form .submit {
+    width: 100%;
+    background-color: #d4d642;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    box-shadow: 6px 6px 0 #efe9e9;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 10px 0;
+    transition: 0.2s;
+}
+
