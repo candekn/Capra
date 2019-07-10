@@ -84,10 +84,10 @@ footer {
  }
 
 
-/* Teaser
+/* Fromulario
 -------------------------------------*/
 #teaser {
-    height: 600px;
+    height: 542px;
     padding: 60px 0;
     background-image: url(../img/slider-2.jpg);
     background-repeat: no-repeat;
@@ -107,19 +107,18 @@ footer {
 }
 
 .texto-sup {
-    font-weight: 300 !important;
+    font-weight: 300px !important;
     line-height: normal;
 }
 
 #teaser .reservation-form-shadow {
-    height: 480px;
+    height: 100%;
     background-color: #fff;
     box-shadow: 0 9px 0px 0px #ffffff, 0 -9px 0px 0px #ffffff, 7px 0 15px -4px rgba(0, 0, 0, 0.3), -7px 0 15px -4px rgba(0, 0, 0, 0.3);
 }
 
 #teaser form {
-    padding: 34px;
-    
+    padding: 34px;   
 }
 
 
@@ -198,11 +197,11 @@ footer {
 }
 
 #teaser form .date {
-    width: 240px;
+    width: 60%;
 }
 
 #teaser form .time {
-    width: 136px;
+    width: 30%;
 }
 
 #teaser form .styled-select-time {
@@ -248,5 +247,6 @@ footer {
     font-weight: 300;
     padding: 10px 0;
     transition: 0.2s;
+
 }
 
