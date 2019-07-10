@@ -7,8 +7,7 @@
 }
 
 a:hover{
-    text-decoration: #97be50!important;
-    color: #97be50!important;
+    color: #d4d642!important;
 }
 
 
@@ -17,9 +16,14 @@ a:hover{
   font-size: 19px;
 }
 
+.btn-warning {
+    background-color: #d4d642 !important;
+    color: black;
+}
+
 body{
     font-family: 'Abel', sans-serif;
-    background: url(../img/bariloche4.jpg);
+    
 }
 .carousel-item {
     height: 65vh;
@@ -38,7 +42,7 @@ body{
 }
 
 .nav-link.active {
-  color: #97be50 !important;
+  color: #d4d642 !important;
 }
 
 .navbar{
@@ -84,12 +88,12 @@ footer {
  }
 
 
-/* Fromulario
+/* Formulario
 -------------------------------------*/
 #teaser {
     height: 542px;
     padding: 60px 0;
-    background-image: url(../img/slider-2.jpg);
+    background-image: url(../img/barilo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -131,7 +135,7 @@ footer {
 
 #teaser form .styled-select-car select {
     border: none;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     width: 100%;
     background-image: none;
@@ -170,17 +174,17 @@ footer {
     border: 1px solid #efe9e9;
     background-color: rgba(212, 214, 66,0.2);
     font-weight: 300;
-    font-size: 18px;
+    font-size: 16px;
     color: #716d6e;
-    width: 110px;
+    width: 100px;
     text-align: center;
-    padding: 7px;
+    padding: 8px;
 }
 
 #teaser form .input-group input {
     border-radius: 0;
-    color: #d4d642;
-    font-size: 14px;
+    color: #716d6e;
+    font-size: 13px;
     padding-left: 15px;
     box-shadow: none;
     background: none;
@@ -189,7 +193,7 @@ footer {
 #teaser form .form-control {
     height: 43px;
     border: 2px solid #efe9e9;
-    box-shadow: none;
+    color: #d4d642;
 }
 
 #teaser form .datetime {
@@ -197,11 +201,11 @@ footer {
 }
 
 #teaser form .date {
-    width: 60%;
+    width: 73%;
 }
 
 #teaser form .time {
-    width: 30%;
+    width: 27%;
 }
 
 #teaser form .styled-select-time {
@@ -215,14 +219,13 @@ footer {
 
 #teaser form .styled-select-time select {
     border: none;
-    font-size: 16px;
+    font-size: 14px;
     width: 100%;
-    background-image: none;
     background: #fff;
     -webkit-appearance: none;
     padding: 8px 8px;
     height: 39px;
-    color: #e9bd15;
+    color: #716d6e;
 }
 
 .pull-right {

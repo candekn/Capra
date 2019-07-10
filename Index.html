@@ -11,10 +11,8 @@
     <link rel="stylesheet" href="css/fuentes.css">
     <link rel="stylesheet" href="css/carousel.css">
     <link href="https://fonts.googleapis.com/css?family=Abel|Russo+One&display=swap" rel="stylesheet">
-    <!-- --->
+    <!-- --->   
     
-
-   
     <title>Capra</title>
 </head>
 <body>
@@ -106,7 +104,10 @@
 
             <div class="datetime pick-up">
                 <div class="date pull-left">
-                <div class="input-group"><span class="input-group-addon pixelfix">Entrega</span> <input class="form-control datepicker" id="pick-up-date" name="pick-up-date" placeholder="dd/mm/aaaa" type="text" /></div>
+                    <div class="input-group">
+                        <span class="input-group-addon pixelfix">Entrega</span> 
+                        <input class="form-control" id="c-entrega" placeholder="dd/mm/aaaa" type="date" />
+                    </div>
                 </div>
 
                 <div class="time pull-right">
@@ -126,7 +127,9 @@
 
             <div class="datetime drop-off">
                 <div class="date pull-left">
-                    <div class="input-group"><span class="input-group-addon pixelfix">Devoluci&oacute;n</span> <input class="form-control datepicker" id="drop-off-date" name="drop-off-date" placeholder="dd/mm/aaaa" type="text" />
+                    <div class="input-group">
+                        <span class="input-group-addon pixelfix">Devoluci&oacute;n</span> 
+                        <input class="form-control" id="c-devolucion" placeholder="dd/mm/aaaa" type="date" />
                     </div>
                 </div>
 
@@ -157,11 +160,6 @@
         </div>
    </section>
 </div>  
-      
-      
-      
-      
-      
       
       
       
@@ -223,7 +221,7 @@
    <div class="card mb-3">
   <div class="row no-gutters bg-transparent">
     <div class="col-md-3">
-      <img src="img/reserva.jpg" class="card-img" alt="...">
+      <img src="img/reserva.jpg" class="card-img img-fluid">
     </div>
     <div class="col-md-9 bg-dark text-white">
       <div class="card-body">
@@ -239,7 +237,7 @@
 <div class="card mb-3">
   <div class="row no-gutters">
     <div class="col-md-3">
-      <img src="img/presupuestos.jpg" class="card-img" alt="...">
+      <img src="img/presupuestos.jpg" class="card-img img-fluid">
     </div>
     <div class="col-md-9 bg-dark text-white">
       <div class="card-body">
@@ -310,7 +308,6 @@
    <script src="js/jquery.min.js"></script>
    <script src="js/bootstrap.min.js"></script>
    <script src="https://kit.fontawesome.com/3ed562f0c6.js"></script>
-
    <!-- --->
 </body>
 </html>

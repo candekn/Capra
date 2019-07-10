@@ -4556,6 +4556,7 @@ input[type="button"].btn-block {
   -ms-flex-direction: column;
   flex-direction: column;
   min-width: 0;
+  text-align: center;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
