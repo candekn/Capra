@@ -21,6 +21,10 @@ a:hover{
     color: black;
 }
 
+.btn-warning:hover {
+    color: white !important;
+}
+
 body{
     font-family: 'Abel', sans-serif;
     
@@ -259,5 +263,20 @@ footer {
     padding: 10px 0;
     transition: 0.2s;
 
+}
+
+/* Map */
+
+.map-container{
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    
+}
+.map-container iframe{
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
