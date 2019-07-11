@@ -111,15 +111,16 @@ footer {
 }
 
 #texto-home {
-    font-family: 'Abel', sans-serif;
+    font-family: 'Russo one', sans-serif;
     text-align: left;
     width: 80%;
     height: auto;
-    color: #FFF;
-    font-size: 33px;
+    color: #fff;
+    font-size: 30px;
     line-height: 33px;
-    text-shadow: 2px 0px 7px rgba(0, 0, 0, 0.69);
-    font-weight: normal;
+    text-shadow: 7px 0px 6px rgba(212, 214, 66, 0.6);
+    font-weight: lighter;
+    padding: 10px;
 }
 
 .texto-sup {
@@ -196,7 +197,7 @@ footer {
 #teaser form .input-group input {
     border-radius: 0;
     color: #716d6e;
-    font-size: 13px;
+    font-size: 15px;
     padding-left: 15px;
     box-shadow: none;
     background: none;
@@ -272,6 +273,7 @@ footer {
     overflow: hidden;
     position: relative;
     height: 400px;
+    box-shadow: 6px 6px 0 #efe9e9;
     
 }
 .map-container iframe{
