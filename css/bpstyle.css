@@ -1,15 +1,15 @@
+@import url('/assets/ui-studio/public/external/font-roboto.css');
+
 :root {
-  --main-bg-color: #ffffff;
+  --main-bg-color: #f0f0f0;
   --main-bg-color-hover: rgba(255, 255, 255, 0.9);
   --main-fg-color: #000000;
   --main-fg-color-hover: rgba(0, 0, 0, 0.07);
 }
 
-@import url('https://fonts.googleapis.com/css?family=Lato');
-
 body {
   margin: 0 !important;
-  font-family: 'Lato', sans-serif;
+  font-family: Roboto !important;
   overflow: hidden;
 }
 
@@ -18,15 +18,28 @@ body {
   outline: none !important;
 }
 
-.bpw-from-user .bpw-chat-bubble {
-  background-color: #ef661d;
-  color: #6e6e6;
+.hidden {
+  visibility: hidden !important;
+  height: 0 !important;
 }
 
-.bpw-from-bot .bpw-chat-bubble {
-	border-radius: 10px !important;
-  background-color: #062b4a;
-  color: #e6e6e6;
+.bpw-from-user .bpw-chat-bubble .bpw-chat-bubble-content {
+  background-color: #f0f0f0;
+  color: #000000;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 15px 15px 15px 15px;
+  border-color: #ef661d;
+}
+
+.bpw-from-bot .bpw-chat-bubble .bpw-chat-bubble-content {
+  background-color: #f0f0f0;
+  color: #000000;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 15px 15px 15px 15px;
+  border-color:#2c47a1;
+  padding: 10px 15px !important;
 }
 
 .bp-emulator-history .bpw-chat-bubble {
@@ -45,8 +58,26 @@ body {
   background-color: #000000;
 }
 
+.bpw-message-read-more {
+  color: #011c41;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 15px;
+  line-height: 23px;
+  margin: 5px 0 0;
+  padding: 0;
+  text-align: left;
+  text-decoration: underline;
+}
+
+.bpw-widget-btn:focus,
+.bpw-widget-btn:hover {
+  background-color: #333;
+}
+
 .bpw-chat-container {
-  background-color: #ffffff;
+  background-color: #f0f0f0;
   color: #000000;
 }
 
@@ -84,19 +115,19 @@ body {
 }
 
 .bpw-button {
-    background-color: #ef661d;
-    font-size: 1rem;
-    padding: 0.3rem;
-    min-width: 5rem;
-    height: 33px;
-    text-align: center;
-    border: 1px solid currentColor;
-    border-radius: 10px;
-    cursor: pointer;
-    margin: 4px 3px;
-    text-transform: none;
-    overflow: visible;
-    color: #d3d3d3;
+  background-color: var(--main-bg-color);
+  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+  min-width: 5rem;
+  min-height: 40px;
+  text-align: center;
+  border: 1px solid #ce521b;
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 3px 2px;
+  text-transform: none;
+  overflow: visible;
+  align-items: flex-start;
 }
 
 .bpw-button-alt {
@@ -108,7 +139,8 @@ body {
 }
 
 .bpw-button:hover {
-  background-color: rgba(0, 0, 0, 0.07);
+  background-color: #ce511b;
+  color: #fff;
 }
 
 .bpw-input {
@@ -180,7 +212,7 @@ body {
   width: 100%;
 }
 
-.bpw-message-group > :not(:last-child) {
+.bpw-message-group > :not(:last-child):not(.hidden) {
   margin-bottom: 2px;
 }
 
@@ -271,37 +303,82 @@ body {
 *  for example .bpw-bubble-text or .bpw-bubble-carousel
 */
 .bpw-chat-bubble {
-  color: rgb(255, 255, 255);
+  color: #f0f0f0;
 
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border: 1px solid;
+  border-top-left-radius:15px;
+  border-bottom-left-radius:15px;
+  border-top-right-radius:15px;
+  border-bottom-right-radius:15px;
 
   max-width: 80%;
-  border: 1px solid #f1f1f1;
-  background-color: rgba(255, 255, 255, 0.9);
 
-  padding: 0.5rem 0.75rem;
   white-space: pre-wrap;
   word-break: break-word;
 }
 
-.bpw-from-bot .bpw-bubble-highlight {
+.bpw-chat-bubble-content {
+  border: 1px solid #f1f1f1;
+  padding: 5px 10px;
+}
+
+.bpw-message-feedback {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.bpw-message-feedback button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+
+.bpw-message-feedback i {
+  cursor: pointer;
+  height: 16px;
+
+  margin: 0 4px;
+  fill: #b3b3b3;
+}
+
+.bpw-message-feedback i:hover {
+  fill: black;
+}
+
+.bpw-message-feedback > div {
+  border-radius: 21px;
+  border: 1px solid #f1f1f1;
+  margin-top: -8px;
+  margin-right: -10px;
+  background-color: white;
+  padding: 8px;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bpw-from-bot .bpw-bubble-highlight .bpw-chat-bubble-content {
   background-color: rgba(255, 192, 114, 0.25);
 }
 
-.bpw-from-user .bpw-bubble-highlight {
+.bpw-from-user .bpw-bubble-highlight .bpw-chat-bubble-content {
   background-color: #ffa73a;
 }
 
 .bpw-bubble-session_reset {
   color: red !important;
-  background: none !important;
   border: none;
   border-top: 1px solid red;
   border-bottom: 1px solid red;
-  margin: 10px 0;
+}
+
+.bpw-bubble-session_reset .bpw-chat-bubble-content {
+  color: red !important;
+  background: none !important;
+  padding: 0;
+  margin: 5px 0;
 }
 
 .bpw-bubble-carousel {
@@ -339,39 +416,31 @@ body {
 }
 
 .bpw-chat-bubble p {
-  margin: 0;
+  margin: 5px;
 }
 
-.bpw-chat-bubble:first-of-type {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
 
-.bpw-chat-bubble:last-of-type {
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
 
 .bpw-keyboard-quick_reply {
-  background-color: #fbfbfb;
+  background-color: #e5e5e5;
   padding: 15px 20px;
   text-align: left;
-  border-top: 1px solid #dcdcdc;
+  border-top: 1px solid #011c41;
 }
 
 /* CAROUSEL  */
 .slick-arrow {
-  background-color: #fff;
-  border: 1px solid #dddfe2;
-  width: 32px;
-  height: 32px;
+  background-color: #fff !important;
+  border: 1px solid #dddfe2 !important;
+  width: 32px !important;
+  height: 32px !important;
   border-radius: 3px;
   box-shadow: none;
   color: #444;
   z-index: 1;
 }
 .slick-arrow:before {
-  color: #444;
+  color: #444 !important;
 }
 
 .slick-track {
@@ -538,10 +607,10 @@ body {
 .bpw-composer {
   border-top-width: 1px;
   border-top-style: solid;
-  border-top-color: #aaaaaa;
+  border-top-color:#011c41;
   position: relative;
   padding: 0.5rem 0 0;
-  background: rgba(255, 255, 255, 0.9);
+  background: #f0f0f0;
   transition: border 0.3s ease;
   outline: none;
   padding-bottom: 0.5rem;
@@ -563,25 +632,39 @@ body {
 
 .bpw-powered {
   text-align: right;
-  border-top: 1px solid #aaaaaa;
+  border-top: 1px solid #011c41;
   padding: 2px 5px 2px 0;
+  font-size: smaller;
+  font-style: italic;
+  color: #555;
 }
-
+a{
+  color: #2c47a1;
+  text-decoration: none;
+}
+a:hover{
+  cursor: pointer;
+  font-weight: bold;
+}
 .bpw-send-button {
   position: absolute;
   right: 25px;
   bottom: 28px;
-  border: none;
-  border-radius: 5px;
-  background: #fff;
-  padding: 5px;
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: #ce521b;
+  background: #f0f0f0;
+  padding: 5px 10px;
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
+  color: #444 ;
 }
 
-.bpw-send-button:hover {
-  background: #d8d8d8;
+.bpw-send-button:hover,
+.bpw-send-button:focus {
+  background: #ce511b;
+  color: #fff;
 }
 
 /** HEADER STUFF */
@@ -600,10 +683,12 @@ body {
   flex-shrink: 0;
   height: 52px;
   font-weight: 500;
-  border-top: solid 1px #ccc;
-  border-bottom: 1px solid #ccc;
+  border-top: solid 1px #e5e5e5;
+  border-bottom: 1px solid #011c41;
   padding: 0 1rem;
   overflow: hidden;
+  background-color: #e5e5e5;
+  color: #011c41;
 }
 
 .bpw-header-title-flexbox {
@@ -669,7 +754,22 @@ body {
   background-color: #ff5d5d;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 .bpw-header-icon {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
   color: #bbb;
   margin-left: 17px;
   text-align: right;
@@ -685,7 +785,7 @@ body {
 
 .bpw-floating-button {
   float: right;
-  fill: rgb(255, 255, 255);
+  fill: #f0f0f0;
   cursor: pointer;
   outline: none;
 
@@ -697,7 +797,7 @@ body {
   width: 52px;
   height: 52px;
   cursor: pointer;
-  border-radius: 0px;
+  border-radius:15px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
   overflow: hidden;
 
@@ -742,6 +842,7 @@ body {
   text-align: center;
   color: #1e1e1e;
   overflow-y: auto;
+  height: 100%;
 }
 
 .bpw-botinfo-cover-picture-wrapper {
@@ -815,7 +916,7 @@ body {
   color: inherit;
   background-color: transparent;
   cursor: pointer;
-  border-radius: 20px;
+  border-radius:15px;
   line-height: 24px;
   padding: 5px 10px;
   margin-top: 25px;
